@@ -41,7 +41,6 @@ def standartizationOrion(rowInTableOrion):# bring tables back to normal view
             tmp = rowInTableOrion[i]
             rowInTableOrion[i-1] = tmp
         rowInTableOrion[7] = 'null'
-        print(rowInTableOrion)
         return rowInTableOrion
     except Exception as e:
         print("error in standartizationOrion:"+e)

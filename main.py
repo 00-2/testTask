@@ -2,6 +2,11 @@ import getTables
 import connectToDB
 import datetime
 import compareDB
+import shutil
+
+def printDel(text):
+    width = shutil.get_terminal_size().columns
+    print(text.center(width,"-"))
 
 def toDB(table,organization):
     try:
@@ -31,9 +36,14 @@ def toDB(table,organization):
 
 # tableFSS is similar to table in DB
 # ex ['1', '12.02.2018', '12.02.2021', '-', 'Детектор паров и следов взрывчатых веществ\n«М-Ион» ТУ 4215-282-17942806-13', 'ООО «Диагностика М»\n105118, г. Москва, 5-я ул. Соколиной горы, д. 22', 'ООО «Диагностика М»', 'В соответствии с п. 54 Правил обязательной сертификации ТС ОТБ выдан сертификат рег. № 28']
-#tableFSS = getTables.getTableFSS()
-#toDB(tableFSS, 'FSS')
+"""printDel("getTablseFSS")
+tableFSS = getTables.getTableFSS()
+toDB(tableFSS, 'FSS')
 # 'Заводские номера' FSS equals to concat('Заводской номер', 'Номер партии')
 # ex ['1', '12.02.2018', '12.02.2021', '-', '-', 'Детектор паров и следов взрывчатых веществ «М-Ион» ТУ 4215-282-17942806-13', 'ООО «Диагностика М» 105118, г. Москва, 5-я ул. Соколиной горы, д.22', 'ООО «Диагностика М»']
-#tableOrion = getTables.getTableOrion()
-#toDB(tableOrion, 'Orion')
+printDel("getTableOrion")
+tableOrion = getTables.getTableOrion()
+toDB(tableOrion, 'Orion')
+"""
+printDel("compareDB")
+compareDB.getTables()

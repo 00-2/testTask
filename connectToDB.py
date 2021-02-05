@@ -37,8 +37,9 @@ connection = pymysql.connect(host='localhost',
 def execute(sql):
     try:
         # Execute sql
-        with connection.cursor() as cursor:
-            cursor.execute(sql)
+        cursor = connection.cursor()
+        cursor.execute(sql)
+        connection.commit()
         return cursor.fetchall()
     except Exception as e:
         print(e)
@@ -49,7 +50,7 @@ execute(f"""CREATE TABLE IF NOT EXISTS tableOrion{today} (
                      ID int PRIMARY KEY,
                      dateFrom varchar(10),
                      dateTo varchar(10),
-                     factoryNumber varchar(500),
+                     factoryNumber varchar(600),
                      name varchar(300),
                      owner varchar(200),
                      developer varchar(200),
@@ -59,7 +60,7 @@ execute(f"""CREATE TABLE IF NOT EXISTS tableFSS{today} (
                      ID int PRIMARY KEY,
                      dateFrom varchar(10),
                      dateTo varchar(10),
-                     factoryNumber varchar(500),
+                     factoryNumber varchar(600),
                      name varchar(300),
                      owner varchar(200),
                      developer varchar(200),
