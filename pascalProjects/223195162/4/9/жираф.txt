@@ -1,0 +1,16 @@
+это олень?
+- нет, жираф.
+
+Всё чуть сложнее, чем с оленем - есть строки
+for tmp:=1 to 10 do
+    begin
+         a:=random(100);
+         b:=random(100);
+         x0:=(random(200)+150);
+         Y0:=(random(200)+150);
+         if a mod 2 = 0 then brush.color:=clMaroon else
+         brush.color:=clYellow;
+         Ellipse(x0,y0, x0+a,y0+b);
+    end;
+    
+Они делают пятна у жирафа

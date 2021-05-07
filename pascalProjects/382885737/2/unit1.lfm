@@ -1,0 +1,80 @@
+object Form1: TForm1
+  Left = 72
+  Height = 261
+  Top = 296
+  Width = 1039
+  Caption = 'Form1'
+  ClientHeight = 232
+  ClientWidth = 1039
+  Menu = MainMenu1
+  LCLVersion = '2.0.6.0'
+  object StringGrid1: TStringGrid
+    Left = 64
+    Height = 152
+    Top = 0
+    Width = 328
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 456
+    Height = 17
+    Top = 40
+    Width = 177
+    Caption = 'Самое дорогое мороженое'
+    ParentColor = False
+  end
+  object Edit1: TEdit
+    Left = 456
+    Height = 30
+    Top = 72
+    Width = 120
+    TabOrder = 1
+  end
+  object Button1: TButton
+    Left = 0
+    Height = 25
+    Top = 207
+    Width = 75
+    Caption = 'Автор'
+    OnClick = Button1Click
+    TabOrder = 2
+  end
+  object MainMenu1: TMainMenu
+    object prochitat: TMenuItem
+      Caption = 'Прочитать файл'
+      OnClick = prochitatClick
+    end
+    object sozdat: TMenuItem
+      Caption = 'Создать файл'
+      OnClick = sozdatClick
+    end
+    object NaitiDorogoe: TMenuItem
+      Caption = 'самое дорогое'
+      OnClick = NaitiDorogoeClick
+    end
+    object NaitiPoNazvaniu: TMenuItem
+      Caption = 'найти по названию'
+      OnClick = NaitiPoNazvaniuClick
+    end
+    object Dobavit: TMenuItem
+      Caption = 'Добавить запись'
+      OnClick = DobavitClick
+    end
+    object Udalit: TMenuItem
+      Caption = 'Удалить запись'
+      OnClick = UdalitClick
+    end
+    object Redactir: TMenuItem
+      Caption = 'Редактировать запись'
+      OnClick = RedactirClick
+    end
+    object Ochistit: TMenuItem
+      Caption = 'Очистить таблицу'
+      OnClick = OchistitClick
+    end
+    object Vihod: TMenuItem
+      Caption = 'Выйти'
+      OnClick = VihodClick
+    end
+  end
+end

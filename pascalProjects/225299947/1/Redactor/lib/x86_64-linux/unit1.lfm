@@ -1,0 +1,77 @@
+object Form1: TForm1
+  Left = 343
+  Height = 600
+  Top = 254
+  Width = 350
+  Caption = 'Текстовый редактор'
+  ClientHeight = 571
+  ClientWidth = 350
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  LCLVersion = '2.0.6.0'
+  object Memo1: TMemo
+    Left = 0
+    Height = 481
+    Top = 90
+    Width = 350
+    Align = alBottom
+    Lines.Strings = (
+      'Memo1'
+    )
+    OnChange = Memo1Change
+    ParentFont = False
+    ScrollBars = ssVertical
+    TabOrder = 0
+  end
+  object MainMenu1: TMainMenu
+    left = 16
+    top = 144
+    object MenueFile: TMenuItem
+      Caption = 'Файл'
+      OnClick = MenueFileClick
+      object MenuCreate: TMenuItem
+        Caption = 'Создать'
+        OnClick = MenuCreateClick
+      end
+      object MenueOpen: TMenuItem
+        Caption = 'Открыть'
+        OnClick = MenueOpenClick
+      end
+      object MenuClose: TMenuItem
+        Caption = 'Закрыть'
+        OnClick = MenuCloseClick
+      end
+      object MenuSave: TMenuItem
+        Caption = 'Сохранить'
+        OnClick = MenuSaveClick
+      end
+      object MenuSaveAs: TMenuItem
+        Caption = 'Сохранить как'
+        OnClick = MenuSaveAsClick
+      end
+      object MenuExit: TMenuItem
+        Caption = 'Выход'
+        OnClick = MenuExitClick
+      end
+    end
+    object MenuWork: TMenuItem
+      Caption = 'Работа'
+      object MenuWorkA: TMenuItem
+        Caption = 'А'
+        OnClick = MenuWorkAClick
+      end
+      object MenuWorkB: TMenuItem
+        Caption = 'Б'
+        OnClick = MenuWorkBClick
+      end
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    left = 80
+    top = 144
+  end
+  object SaveDialog1: TSaveDialog
+    left = 144
+    top = 144
+  end
+end

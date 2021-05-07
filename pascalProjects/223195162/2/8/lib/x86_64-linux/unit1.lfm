@@ -1,0 +1,103 @@
+object Form1: TForm1
+  Left = 654
+  Height = 412
+  Top = 206
+  Width = 313
+  Caption = 'Form1'
+  ClientHeight = 412
+  ClientWidth = 313
+  LCLVersion = '2.0.6.0'
+  object Zapolnit: TButton
+    Left = 96
+    Height = 25
+    Top = 0
+    Width = 75
+    Caption = 'Zapolnit'
+    OnClick = ZapolnitClick
+    TabOrder = 0
+  end
+  object ListBox: TListBox
+    Left = 176
+    Height = 240
+    Top = 0
+    Width = 140
+    ItemHeight = 0
+    ScrollWidth = 138
+    TabOrder = 1
+    TopIndex = -1
+  end
+  object Dobavit: TButton
+    Left = 76
+    Height = 56
+    Top = 64
+    Width = 52
+    Caption = 'Dobavit'
+    OnClick = DobavitClick
+    TabOrder = 2
+  end
+  object ComboBox: TComboBox
+    Left = 0
+    Height = 30
+    Top = 0
+    Width = 100
+    ItemHeight = 0
+    TabOrder = 3
+    Text = 'ComboBox'
+  end
+  object Edit: TEdit
+    Left = 0
+    Height = 30
+    Top = 35
+    Width = 171
+    TabOrder = 4
+    Text = 'Edit'
+  end
+  object Udalit: TButton
+    Left = 0
+    Height = 56
+    Top = 64
+    Width = 56
+    Caption = 'Udalit'
+    OnClick = UdalitClick
+    TabOrder = 5
+  end
+  object Rabota: TButton
+    Left = 0
+    Height = 73
+    Top = 168
+    Width = 179
+    Caption = 'Rabota'
+    OnClick = RabotaClick
+    TabOrder = 6
+  end
+  object Label1: TLabel
+    Left = 0
+    Height = 17
+    Top = 256
+    Width = 146
+    Caption = 'Cумма отрицательных'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 152
+    Height = 17
+    Top = 256
+    Width = 153
+    Caption = 'Кол-во положительных'
+    ParentColor = False
+  end
+  object Edit1: TEdit
+    Left = 24
+    Height = 30
+    Top = 284
+    Width = 80
+    TabOrder = 7
+  end
+  object Edit2: TEdit
+    Left = 208
+    Height = 30
+    Top = 284
+    Width = 80
+    TabOrder = 8
+  end
+end

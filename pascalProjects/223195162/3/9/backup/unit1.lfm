@@ -1,0 +1,68 @@
+object Form1: TForm1
+  Left = 201
+  Height = 261
+  Top = 628
+  Width = 618
+  Caption = 'Form1'
+  ClientHeight = 232
+  ClientWidth = 618
+  Menu = MainMenu1
+  LCLVersion = '2.0.6.0'
+  object StringGrid1: TStringGrid
+    Left = 64
+    Height = 152
+    Top = 0
+    Width = 328
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 456
+    Height = 17
+    Top = 40
+    Width = 159
+    Caption = 'Most long-playable record'
+    ParentColor = False
+    OnClick = Label1Click
+  end
+  object Edit1: TEdit
+    Left = 456
+    Height = 30
+    Top = 72
+    Width = 120
+    TabOrder = 1
+  end
+  object MainMenu1: TMainMenu
+    object MenuItem1: TMenuItem
+      Caption = 'Read'
+      OnClick = MenuItem1Click
+    end
+    object MenuItem2: TMenuItem
+      Caption = 'Create'
+      OnClick = MenuItem2Click
+    end
+    object MenuItem3: TMenuItem
+      Caption = 'Find'
+      OnClick = MenuItem3Click
+    end
+    object MenuItem4: TMenuItem
+      Caption = 'Add'
+      OnClick = MenuItem4Click
+    end
+    object MenuItem5: TMenuItem
+      Caption = 'Remove'
+      OnClick = MenuItem5Click
+    end
+    object MenuItem6: TMenuItem
+      Caption = 'Correct'
+      OnClick = MenuItem6Click
+    end
+    object MenuItem8: TMenuItem
+      Caption = 'Clear'
+      OnClick = MenuItem8Click
+    end
+    object MenuItem7: TMenuItem
+      Caption = 'Exit'
+      OnClick = MenuItem7Click
+    end
+  end
+end

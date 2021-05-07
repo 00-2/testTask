@@ -1,0 +1,100 @@
+object Form1: TForm1
+  Left = 1217
+  Height = 1030
+  Top = 27
+  Width = 703
+  Caption = 'Form1'
+  ClientHeight = 1001
+  ClientWidth = 703
+  Menu = MainMenu1
+  LCLVersion = '2.0.6.0'
+  object StringGrid1: TStringGrid
+    Left = 0
+    Height = 168
+    Top = 0
+    Width = 312
+    TabOrder = 0
+    ColWidths = (
+      64
+      74
+      64
+      85
+      22
+    )
+    Cells = (
+      4
+      0
+      0
+      'N'
+      1
+      0
+      'Название'
+      2
+      0
+      'Автор'
+      3
+      0
+      'Год выпуска'
+    )
+  end
+  object StringGrid2: TStringGrid
+    Left = 0
+    Height = 136
+    Top = 189
+    Width = 336
+    TabOrder = 1
+  end
+  object Label1: TLabel
+    Left = 0
+    Height = 17
+    Top = 168
+    Width = 64
+    Caption = 'Результат'
+    ParentColor = False
+  end
+  object MainMenu1: TMainMenu
+    left = 344
+    top = 56
+    object MenuItem1: TMenuItem
+      Caption = 'Файл'
+      object OpenFile: TMenuItem
+        Caption = 'Открыть файл'
+        OnClick = OpenFileClick
+      end
+      object CreateFile: TMenuItem
+        Caption = 'Создать файл'
+        OnClick = CreateFileClick
+      end
+    end
+    object MenuItem2: TMenuItem
+      Caption = 'Процедуры'
+      object Sort: TMenuItem
+        Caption = 'Сортировка файла по алфавиту авторов'
+        OnClick = SortClick
+      end
+      object Find2019: TMenuItem
+        Caption = '>1 КНИГИ С 2019'
+        OnClick = Find2019Click
+      end
+      object FindByAuthor: TMenuItem
+        Caption = 'Поиск по автору'
+        OnClick = FindByAuthorClick
+      end
+      object FindByYear: TMenuItem
+        Caption = 'Поиск по году'
+        OnClick = FindByYearClick
+      end
+      object Add: TMenuItem
+        Caption = 'Добавить книгу в конец'
+        OnClick = AddClick
+      end
+    end
+    object MenuItem3: TMenuItem
+      Caption = 'Выход'
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    left = 344
+    top = 8
+  end
+end

@@ -1,0 +1,84 @@
+object Form1: TForm1
+  Left = 264
+  Height = 1030
+  Top = 27
+  Width = 1471
+  Caption = 'Form1'
+  ClientHeight = 1001
+  ClientWidth = 1471
+  Menu = MainMenu1
+  LCLVersion = '2.0.6.0'
+  object StringGrid1: TStringGrid
+    Left = 0
+    Height = 184
+    Top = 0
+    Width = 448
+    ColCount = 6
+    TabOrder = 0
+    ColWidths = (
+      64
+      74
+      64
+      85
+      88
+      64
+    )
+  end
+  object StringGrid2: TStringGrid
+    Left = 568
+    Height = 184
+    Top = 0
+    Width = 392
+    ColCount = 6
+    TabOrder = 1
+  end
+  object Label1: TLabel
+    Left = 496
+    Height = 17
+    Top = 0
+    Width = 64
+    Caption = 'Результат'
+    ParentColor = False
+  end
+  object MainMenu1: TMainMenu
+    left = 496
+    top = 80
+    object MenuItem1: TMenuItem
+      Caption = 'Файл'
+      object OpenFile: TMenuItem
+        Caption = 'Открыть файл'
+        OnClick = OpenFileClick
+      end
+      object CreateFile: TMenuItem
+        Caption = 'Создать файл'
+        OnClick = CreateFileClick
+      end
+    end
+    object MenuItem2: TMenuItem
+      Caption = 'Процедуры'
+      object Sort: TMenuItem
+        Caption = 'Сортировка по мощности'
+        OnClick = SortClick
+      end
+      object FindByAuthor: TMenuItem
+        Caption = 'Поиск русских машин 2019 год'
+        OnClick = FindByAuthorClick
+      end
+      object FindInDuration: TMenuItem
+        Caption = 'найти в промежутке цены'
+        OnClick = FindInDurationClick
+      end
+      object Add: TMenuItem
+        Caption = 'Добавить не нарушая порядка'
+        OnClick = AddClick
+      end
+    end
+    object MenuItem3: TMenuItem
+      Caption = 'Выход'
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    left = 504
+    top = 48
+  end
+end

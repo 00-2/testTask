@@ -1,0 +1,44 @@
+program pr1;
+const n=10;
+var a: array [1..n] of integer;
+    k,i,ind1,ind2: integer;
+begin
+randomize;
+for i:=1 to n do
+ begin
+  a[i]:=random(100);
+  write(a[i]:4);
+ end;
+writeln;
+if a[1]>a[2] then //если 1 больше 2
+ begin
+  ind1:=1;//индекс 1
+  ind2:=2;//индекс 2
+ end
+else //иначе
+ begin
+  ind1:=2;
+  ind2:=1;
+ end;
+for i:=3 to n do
+ begin
+  if a[i]>a[ind1] then //если больше 1 макс.
+   begin
+    ind2:=ind1; //второй изменимна первый
+    ind1:=i;//первый изменим на i
+   end
+  else if a[i]>a[ind2] then ind2:=i;//если больше только второго, то заменим его на i
+ end;
+writeln('Первый максимальный элемент=',A[ind1],' его номер=',ind1);
+writeln('Второй максимальный элемент=',A[ind2],' его номер=',ind2);
+
+k:=A[ind1];
+A[ind1]:=A[ind2];
+A[ind2]:=k;
+writeln;
+for i:=1 to n do
+ begin
+  write(a[i]:4);
+ end;
+
+end.

@@ -1,0 +1,19 @@
+0 IU3-22 Ermakov    4 4 4
+
+1 IU2-22 Ermakov    3 3 3
+
+2 IU3-21 Ermolin    4 5 4
+
+3 IU2-24 Afanasev   2 2 2
+
+4 IU4-23 Lukutina   2 2 2
+
+5 IU2-22 Pegsa      3 4 2
+
+6 IU3-21 Spirid     4 5 2
+
+7 IU2-22 Spirid     5 5 5
+
+8 IU4-24 Titov      2 2 2
+
+9 IU2-22 Orehov     3 5 5

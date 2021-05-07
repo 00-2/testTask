@@ -1,0 +1,59 @@
+{
+
+                            Online Pascal Compiler.
+                Code, Compile, Run and Debug Pascal program online.
+Write your code in this editor and press "Run" button to execute it.
+
+}
+
+
+program Hello;
+const n=5;
+m=7;
+var max,k,i,j,indMax,tmp : integer;
+var matr:array of array of integer;
+begin
+SetLength(matr,n,m);
+
+
+for i:=0 to n-1 do begin
+    for j:=0 to m-1 do 
+        matr[i][j]:=random(100);
+    end;
+
+for i:=0 to n-1 do begin
+    for j:=0 to m-1 do 
+        write(matr[i][j]:4);
+    writeln;
+end;
+
+for k:=0 to n-1 do begin
+    indMax:=0;
+    max:=matr[k,indMax];
+    for i:=0 to m-1 do begin
+        if max<matr[k,i] then
+        begin
+            max:=matr[k,i];
+            indMax:=i;
+        end;
+    end;
+    
+    for i := 0 to indMax-2 do
+        for j := 0 to indMax-i-1 do
+            if matr[k, j] > matr[k, j+1] then begin
+                tmp := matr[k, j];
+                matr[k, j] := matr[k, j+1];
+                matr[k, j+1] := tmp;
+            end;
+    
+end;
+writeln(max, ' ' , indMax);
+
+for i:=0 to n-1 do begin
+    for j:=0 to m-1 do 
+        write(matr[i][j]:4);
+    writeln;
+end;
+end.
+
+

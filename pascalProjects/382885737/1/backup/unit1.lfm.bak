@@ -1,0 +1,56 @@
+object Form1: TForm1
+  Left = 200
+  Height = 240
+  Top = 131
+  Width = 320
+  Caption = 'Form1'
+  ClientHeight = 240
+  ClientWidth = 320
+  LCLVersion = '2.0.6.0'
+  object ComboBox1: TComboBox
+    Left = 16
+    Height = 30
+    Top = 56
+    Width = 117
+    ItemHeight = 0
+    OnChange = ComboBox1Change
+    TabOrder = 0
+    Text = 'ComboBox1'
+  end
+  object Edit1: TEdit
+    Left = 16
+    Height = 30
+    Top = 24
+    Width = 120
+    TabOrder = 1
+    Text = 'Edit1'
+  end
+  object Button1: TButton
+    Left = 136
+    Height = 25
+    Top = 24
+    Width = 75
+    Caption = 'Button1'
+    OnClick = Button1Click
+    TabOrder = 2
+  end
+  object Button2: TButton
+    Left = 216
+    Height = 26
+    Top = 24
+    Width = 75
+    Caption = 'Button2'
+    OnClick = Button2Click
+    TabOrder = 3
+  end
+  object ListBox1: TListBox
+    Left = 16
+    Height = 80
+    Top = 96
+    Width = 100
+    ItemHeight = 0
+    ScrollWidth = 98
+    TabOrder = 4
+    TopIndex = -1
+  end
+end
